@@ -20,7 +20,11 @@ type Profile = {
     title: string;
     text: string;
   };
-  links: {
+  opensource: {
+    url: string;
+    title: string;
+  }[];
+  privateRepos: {
     url: string;
     title: string;
   }[];

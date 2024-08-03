@@ -1,22 +1,32 @@
 {
   "$schema": "./profile.schema.json",
   "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg",
-  "username": "John Smith",
-  "links": [
+  "username": "cameronking4",
+  "opensource": [
+    { "url": "https://buymyrepo.com", "title": "BuyMyRepo" },
+    { "url": "https://paywallmygpt.com", "title": "PaywallMyGPT" },
+    { "url": "https://vapiblocks.com", "title": "VapiBlocks (UI Library for Vapi AI)" },
+    { "url": "https://sketch2app.io", "title": "Sketch2App" },
+    { "url": "https://qashboard.com", "title": "Personal Finance AI Dashboard" },
+    { "url": "https://www.youtube.com/watch?v=s8K5YUjOI_c", "title": "Fridge2Food (Voted Top10 on Product Hunt)" },
+    { "url": "https://apps.apple.com/us/app/mimotion-3d-avatar-animator/id1664357059", "title": "MiMotion Pro" }
+  ],
+  "privateRepos": [
     { "url": "https://example.com", "title": "Photo book" },
     { "url": "https://example.com", "title": "Website" },
     { "url": "https://example.com", "title": "Discord" }
   ],
-  "bio": "Software Developer / Photographer",
-  "location": "Vienna, Austria",
+  "bio": "PM @ Azure by day | Indie hacker by night.",
+  "location": "NYC, NY",
   "socialAccounts": {
-    "github": "/github/harshmangalam",
-    "instagram": "https://instagram.com/",
-    "twitter": "https://twitter.com/"
+    "youtube": "https://www.youtube.com/channel/UCP8HbHj2h_ZAihLCmWBHEYw",
+    "github": "/github/cameronking4",
+    "instagram": "https://instagram.com/shiestycameron",
+    "twitter": "https://twitter.com/cameronyking"
   },
   "banner": {
-    "title": "Photo book release!",
-    "text": "You can now order my newly released photobook."
+    "title": "Working on an idea",
+    "text": "WYSIWYG editor served on top of dev command"
   },
   "rss": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
   "readme": "https://gist.githubusercontent.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc/raw/d59043abbb123089ad6602aba571121b71d91d7f/README-Template.md"

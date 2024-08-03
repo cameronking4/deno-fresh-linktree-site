@@ -32,7 +32,7 @@ export const handler: Handlers<HandlerProps | null> = {
 
     let feed = undefined;
     if (rss) feed = await fetchFeed(rss);
-    const res = await fetch("https://api.github.com/users/harshmangalam");
+    const res = await fetch("https://api.github.com/users/cameronking4");
     const jsonData = await res.json();
 
     return ctx.render({
@@ -53,7 +53,8 @@ export default function Home({ data }: PageProps<HandlerProps | null>) {
     location,
     socialAccounts,
     banner,
-    links,
+    opensource,
+    privateRepos,
     readme,
   } = profile;
   const { feed,githubProfile } = data;
@@ -80,7 +81,7 @@ export default function Home({ data }: PageProps<HandlerProps | null>) {
       </ProfileMisconfigComponent>
     );
   }
-  if (links.length === 0) {
+  if (opensource.length === 0) {
     return (
       <ProfileMisconfigComponent>
         Property <i>links</i> can't be of length zero.
@@ -89,20 +90,20 @@ export default function Home({ data }: PageProps<HandlerProps | null>) {
   }
 
   return (
-    <main class="w-10/12 sm:w-96 mx-auto">
+    <main class="w-1/2 mx-auto">
       <div class="flex flex-col w-full mt-12 mb-28">
         <div class="flex flex-col items-center w-full w-full rounded-xl p-4">
           <AvatarComponent avatar={githubProfile.avatar_url} />
           <UsernameComponent username={githubProfile.login} />
-          <BioComponent bio={githubProfile.bio} />
-          {location && <LocationComponent location={githubProfile.location} />}
-          {readme && <ReadmeButtonComponent />}
+          <BioComponent bio={bio} />
+          {/* {location && <LocationComponent location={githubProfile.location} />} */}
+          {/* {readme && <ReadmeButtonComponent />} */}
           <div class="mb-4"></div>
           <SocialLinksComponent socialAccounts={socialAccounts} />
           {banner && (
             <BannerComponent title={banner.title} text={banner.text} />
           )}
-          <TabsIsland links={links} feed={feed} />
+          <TabsIsland links={opensource} feed={privateRepos} />
         </div>
       </div>
     </main>

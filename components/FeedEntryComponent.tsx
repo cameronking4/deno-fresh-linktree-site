@@ -10,7 +10,6 @@ export default function FeedEntryComponent(
   props: {
     entry: {
       title: string;
-      date: Date;
       url: string;
     };
   },
@@ -28,12 +27,6 @@ export default function FeedEntryComponent(
         <h2 class="text-lg font-bold text-gray-900 leading-snug mb-1 pr-5">
           {entry.title}
         </h2>
-        <h4 class="text-xs font-semibold text-gray-400">
-          {(new Date(entry.date)).toLocaleDateString(
-            "en-US",
-            options,
-          )}
-        </h4>
         <span class="block absolute top-0 right-0 p-3">
           <ExternalLink size={22} />
         </span>
