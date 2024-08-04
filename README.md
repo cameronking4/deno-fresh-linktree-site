@@ -1,8 +1,7 @@
-# Linksapp
+# Linktree clone for social sharing
 
-![screen_recording](https://user-images.githubusercontent.com/19251998/198886868-0bd8affb-8f0c-445b-b31e-0e122697c751.gif)
+![Screenshot 2024-08-03 at 5 02 52 PM](https://github.com/user-attachments/assets/4dcb8ca9-f6d9-47e9-a1cd-d68ada3902d8)
 
-## Usage
 
 ### Step 1: Fork
 
