@@ -90,7 +90,7 @@ export default function Home({ data }: PageProps<HandlerProps | null>) {
   }
 
   return (
-    <main class="w-1/2 mx-auto">
+    <main class="w-1/2 sm:w-2/3 mx-auto">
       <div class="flex flex-col w-full mt-12 mb-28">
         <div class="flex flex-col items-center w-full w-full rounded-xl p-4">
           <AvatarComponent avatar={githubProfile.avatar_url} />
